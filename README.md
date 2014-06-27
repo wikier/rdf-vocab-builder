@@ -1,10 +1,16 @@
-# Sesame Vocabulary Builder
+# RDF Vocabulary Builder
 
-Sesame Vocabulary Builder provides a command line tool and maven plugin that allows to create constants for RDF primitives for a given namespace from RDF ontology files.
+RDF Vocabulary Builder is a fork of [Sesame Vocabulary Buider](https://github.com/tkurz/sesame-vocab-builder) to
+port it to [Commons RDF](https://github.com/wikier/commons-rdf) and make a preliminar evaluation, which potentially
+could end-up on a merge of the original tool with [Jena schemagen](https://jena.apache.org/documentation/tools/schemagen.html).
+
+It provides a command line tool and maven plugin that allows to create constants for RDF primitives for a given namespace from RDF ontology files.
+
+Status: *work-in-progress*, so far it's just an experiment
 
 ## How To
 
-1. Download the latest version [here](https://github.com/tkurz/sesame-vocab-builder/releases).
+1. Download the latest version [here](https://github.com/wikier/rdf-vocab-builder/releases).
 2. Run jar from command line (Java 7 required): `java -jar vocab-builder-cli-{VERSION}-exe.jar <input-file> [<output-file>]`
 3. Additional information can be configured using command-line parameters
 
@@ -32,7 +38,7 @@ Sesame Vocabulary Builder provides a command line tool and maven plugin that all
 
 ## Run from Git
 
-1. Clone from https://github.com/tkurz/sesame-vocab-builder.git
+1. Clone from https://github.com/wikier/rdf-vocab-builder.git
 2. Run `./sesame-vocab-builder  <input-file> <output-file>`
 3. Additional information can be configured using command-line parameters
 
