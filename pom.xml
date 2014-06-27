@@ -54,6 +54,7 @@
     </scm>
 
     <properties>
+        <commons.rdf.version>0.0.1-SNAPSHOT</commons.rdf.version>
         <jackson.version>2.3.3</jackson.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -120,6 +121,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-rdf</artifactId>
+                <version>${commons.rdf.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.openrdf.sesame</groupId>
                 <artifactId>sesame-model</artifactId>
@@ -248,4 +254,5 @@
         <module>vocab-builder-cli</module>
         <module>vocab-builder-maven-plugin</module>
     </modules>
+
 </project>

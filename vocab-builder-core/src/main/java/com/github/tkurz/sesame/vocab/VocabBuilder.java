@@ -4,6 +4,7 @@ import info.aduna.io.MavenUtil;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.text.WordUtils;
+import org.apache.commons.rdf.IRI;
 import org.openrdf.model.*;
 import org.openrdf.model.impl.URIImpl;
 import org.openrdf.model.util.GraphUtil;
@@ -138,6 +139,7 @@ public class VocabBuilder {
             out.printf("package %s;%n%n", getPackageName());
         }
         //imports
+        out.println("import org.apache.commons.rdf.IRI;");
         out.println("import org.openrdf.model.URI;");
         out.println("import org.openrdf.model.ValueFactory;");
         out.println("import org.openrdf.model.impl.ValueFactoryImpl;");
@@ -205,7 +207,7 @@ public class VocabBuilder {
             out.println(getIndent(1) + " */");
 
             String nextKey = cleanKey(doCaseFormatting(key));
-            out.printf(getIndent(1) + "public static final URI %s;%n", nextKey);
+            out.printf(getIndent(1) + "public static final IRI %s;%n", nextKey);
             out.println();
         }
 
@@ -442,4 +444,5 @@ public class VocabBuilder {
     public CaseFormat getConstantCase() {
         return caseFormat;
     }
+    
 }
