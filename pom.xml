@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.tkurz.sesame</groupId>
-    <artifactId>vocab-builder</artifactId>
+    <groupId>com.github.wikier</groupId>
+    <artifactId>rdf-vocab-builder</artifactId>
     <version>1.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -13,8 +13,8 @@
         <version>7</version>
     </parent>
 
-    <name>Sesame Vocabulary Builder</name>
-    <url>https://github.com/tkurz/sesame-vocab-builder</url>
+    <name>RDF Vocabulary Builder</name>
+    <url>https://github.com/wikier/rdf-vocab-builder</url>
 
     <licenses>
         <license>
@@ -39,12 +39,17 @@
             <name>Jakob Frank</name>
             <email>jakob@apache.org</email>
         </developer>
+        <developer>
+            <id>wikier</id>
+            <name>Sergio Fernández</name>
+            <email>wikier@apache.org</email>
+        </developer>
     </developers>
 
     <scm>
-        <url>https://github.com/tkurz/sesame-vocab-builder.git</url>
-        <connection>scm:git:git@github.com:tkurz/sesame-vocab-builder.git</connection>
-        <developerConnection>scm:git:git@github.com:tkurz/sesame-vocab-builder.git</developerConnection>
+        <url>https://github.com/wikier/rdf-vocab-builder.git</url>
+        <connection>scm:git:git@github.com:wikier/rdf-vocab-builder.git</connection>
+        <developerConnection>scm:git:git@github.com:wikier/rdf-vocab-builder.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 

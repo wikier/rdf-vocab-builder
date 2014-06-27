@@ -3,9 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.github.tkurz.sesame</groupId>
-        <artifactId>vocab-builder</artifactId>
+        <groupId>com.github.wikier</groupId>
+        <artifactId>rdf-vocab-builder</artifactId>
         <version>1.4-SNAPSHOT</version>
+        <relativePath>../</relativePath>
     </parent>
 
     <artifactId>vocab-builder-cli</artifactId>
@@ -97,8 +98,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.tkurz.sesame</groupId>
-            <artifactId>vocab-builder-core</artifactId>
+            <groupId>com.github.wikier</groupId>
+            <artifactId>rdf-vocab-builder-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
